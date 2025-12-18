@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Image</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .rifle1,.rifle2{
+            display: flex;
+        }
+        .container section{
+            width: 50%;
+           border: 3px;
+           border-radius: 10px;
+        }
+         img{
+        width: 100%;
+        }
+        .container button{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="rifle1">
+            <div><img src="images/firearm1.jpg" alt=""></div>
+            <div> <h3>AR15 Assault Rifle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id officiis repellat maxime cumque laboriosam itaque velit natus rerum voluptas.</p>
+            <button>Buy Now</button></div></section>
+           
+        
+        <section class="rifle2">
+           <div>
+             <img src="images/firearm2.jpg" alt="">
+           </div>
+           <div>
+            <h3>M24 Sniper Rifle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas velit temporibus atque totam odio quibusdam veniam veritatis culpa ad laudantium eveniet dignissimos suscipit eligendi.</p>
+            <button>Buy Now</button></div>
+           </section>
+            
+        
+    </div>
+</body>
+</html>
