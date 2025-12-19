@@ -6,45 +6,50 @@
     <title>Text and Image</title>
     <style>
         .container{
-            display: flex;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
             gap: 5px;
+            
         }
-        .rifle1,.rifle2{
-            display: flex;
-        }
-        .container section{
-            width: 50%;
-           border: 3px;
-           border-radius: 10px;
-        }
+       
+       
+       
          img{
         width: 100%;
+        height: 60%;
         }
         .container button{
             background-color: orange;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1,1fr);
+                gap: 2px;
+            }
+            img{
+                height: fit-content;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <section class="rifle1">
+        
             <div><img src="images/firearm1.jpg" alt=""></div>
             <div> <h3>AR15 Assault Rifle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque id officiis repellat maxime cumque laboriosam itaque velit natus rerum voluptas.</p>
-            <button>Buy Now</button></div></section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptates, a animi autem nesciunt eos fugit veritatis ea expedita accusantium laborum eligendi dolor sequi eius accusamus beatae, iste reiciendis dolorem quaerat aliquid repellat voluptatem laudantium labore. Voluptatum totam magnam quod laborum doloribus velit, error quidem?</p>
+            <button>Buy Now</button></div>
            
         
-        <section class="rifle2">
+       
            <div>
              <img src="images/firearm2.jpg" alt="">
            </div>
            <div>
             <h3>M24 Sniper Rifle</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas velit temporibus atque totam odio quibusdam veniam veritatis culpa ad laudantium eveniet dignissimos suscipit eligendi.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo aperiam, laboriosam dolores, quo sunt saepe quibusdam eos vero harum, illo laborum. Officiis nam expedita tenetur iure, corrupti beatae quas laborum rem incidunt qui ea similique impedit. Aliquam, molestiae! Eaque, molestiae.</p>
             <button>Buy Now</button></div>
-           </section>
-            
+          
         
     </div>
 </body>
